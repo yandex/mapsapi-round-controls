@@ -139,7 +139,7 @@ For more info visit https://tech.yandex.ru/maps/doc/jsapi/2.1/ref/reference/cont
 
 | Param                        | Value
 | ---------------------------- | --------------------
-| `parameters.options.layout`  | `round#buttonLayout`
+| `parameters.options.layout`  | `round#zoomLayout`
 
 ```js
 var zoomControl = new ymaps.control.ZoomControl({
