@@ -1,0 +1,12 @@
+{
+    "preset": "yandex",
+
+    "excludeFiles": [
+        ".git/**",
+        ".enb/**",
+        "build",
+        "node_modules/**",
+        "client/common/i18n/**",
+        "test/client/**"
+    ]
+}

@@ -1,0 +1,12 @@
+{
+    "name": "maps.listbox.layout.html",
+    "depends": [
+        "maps-popup",
+        "maps-button",
+        "maps-button-icon",
+        "maps-listbox"
+    ],
+    "src": [
+        "maps.listbox.layout.html"
+    ]
+}

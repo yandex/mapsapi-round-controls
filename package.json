@@ -1,0 +1,26 @@
+{
+  "private": true,
+  "version": "0.0.0",
+  "name": "maps-theme",
+  "description": "Yandex.Maps API Maps Theme",
+  "dependencies": {
+    "md5": "^2.0.0",
+    "cli-color": "^1.0.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-util": "^3.0.6",
+    "lodash": "^3.6.0",
+    "through2": "^0.6.3",
+    "vow": "^0.4.10",
+    "vow-fs": "^0.3.4",
+    "ymb": "^0.3.43"
+  },
+  "devDependencies": {
+    "git-hooks": "~1.0.0-rc.4",
+    "jshint": "^2.8.0"
+  },
+  "scripts": {
+    "debug": "ymb build builder/",
+    "release": "ymb build builder/ -m release"
+  }
+}

@@ -1,0 +1,30 @@
+{
+    "src": {
+        "js": [
+            "../src/**/*.js",
+            "!../src/markup/**"
+        ],
+        "css":          "../ui/build/css/**/*.css",
+        "cssPackages":  "../ui/build/css/**/package.json",
+        "htmlLayouts":  "../ui/build/layouts/*/*.html",
+        "cssLayouts":   "../ui/build/layouts/*.css/module.json"
+    },
+    "dest": "../build/",
+    "target": "plugin",
+    "namespace": "ymaps",
+    "store": "solid",
+    "preload": ["package.system"],
+    "asyncMap": false,
+    "modes": {
+        "debug": {
+            "default": true,
+            "dest": "../build/debug/",
+            "minify": false
+        },
+        "release": {
+            "dest": "../build/release/",
+            "minify": true
+        }
+    },
+    "imagesPath": "../ui/build/images/"
+}

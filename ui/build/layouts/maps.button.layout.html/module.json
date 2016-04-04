@@ -1,0 +1,10 @@
+{
+    "name": "maps.button.layout.html",
+    "depends": [
+        "maps-button",
+        "maps-button-icon"
+    ],
+    "src": [
+        "maps.button.layout.html"
+    ]
+}

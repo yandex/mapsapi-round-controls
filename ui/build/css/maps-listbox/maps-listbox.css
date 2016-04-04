@@ -1,0 +1,100 @@
+.ymaps_maps-listbox {
+  display: block;
+  position: relative;
+}
+.ymaps_maps-listbox .ymaps_maps-button__icon {
+  margin-left: 0;
+}
+.ymaps_maps-listbox__list {
+  display: block;
+  position: relative;
+  padding: 5px 0;
+  background-color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.ymaps_maps-listbox__list.ymaps__scrollable {
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+.ymaps_maps-listbox__list-item {
+  display: block;
+  font: 13px Arial, sans-serif;
+  padding: 5px 20px 5px 10px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.ymaps_maps-listbox__list-item:hover {
+  background-color: #fbe6a8;
+}
+.ymaps_maps-listbox__list-item.ymaps__selected {
+  background-color: rgba(251,230,168,0.6);
+  cursor: default;
+}
+.ymaps_maps-listbox__list-item-title,
+.ymaps_maps-listbox__list-item-image {
+  display: inline-block;
+}
+.ymaps_maps-listbox__list-item-image {
+  border-radius: 50%;
+  border: 1px solid rgba(0,0,0,0.2);
+  width: 58px;
+  height: 58px;
+  margin-right: 10px;
+  background-size: cover;
+  background-clip: content-box;
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  background-image: url("3e13d027c9578c4190aa6fddaaa49022.jpg");
+}
+.ymaps_maps-listbox__list-item[data-type="yandex#satellite"] .ymaps_maps-listbox__list-item-image {
+  background-position: 0 -58px;
+}
+.ymaps_maps-listbox__list-item[data-type="yandex#hybrid"] .ymaps_maps-listbox__list-item-image {
+  background-position: 0 -116px;
+}
+.ymaps_maps-listbox__list-item[data-type="yandex#publicMap"] .ymaps_maps-listbox__list-item-image {
+  background-position: 0 100%;
+}
+.ymaps_maps-listbox .ymaps_maps-popup {
+  bottom: 0;
+}
+.ymaps_maps-listbox .ymaps_maps-popup ::-webkit-scrollbar {
+  width: 13px;
+  height: 13px;
+}
+.ymaps_maps-listbox .ymaps_maps-popup ::-webkit-scrollbar-track {
+  background: transparent;
+}
+.ymaps_maps-listbox .ymaps_maps-popup ::-webkit-scrollbar-thumb {
+  min-height: 30px;
+  box-shadow: inset 0 0 0 4px rgba(0,0,0,0.2);
+}
+.ymaps_maps-listbox .ymaps_maps-popup ::-webkit-scrollbar-thumb:hover {
+  box-shadow: inset 0 0 0 4px rgba(0,0,0,0.3);
+}
+.ymaps_maps-listbox .ymaps_maps-popup ::-webkit-scrollbar-thumb:horizontal {
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+}
+.ymaps_maps-listbox .ymaps_maps-popup ::-webkit-scrollbar-thumb:vertical {
+  border-right: 3px solid transparent;
+  border-left: 3px solid transparent;
+}
+.ymaps_maps-listbox .ymaps_maps-popup .ymaps_maps-popup__arrow {
+  bottom: 11px;
+}
+.ymaps_maps-listbox .ymaps_maps-popup.ymaps__position_left {
+  right: 47px;
+}
+.ymaps_maps-listbox .ymaps_maps-popup.ymaps__position_left .ymaps_maps-popup__arrow {
+  right: -6.5px;
+}
+.ymaps_maps-listbox .ymaps_maps-popup.ymaps__position_right {
+  left: 47px;
+}
+.ymaps_maps-listbox .ymaps_maps-popup.ymaps__position_right .ymaps_maps-popup__arrow {
+  left: -6.5px;
+}
+.ymaps_maps-listbox .ymaps_maps-popup__content {
+  padding: 0;
+}

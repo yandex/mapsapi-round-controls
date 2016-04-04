@@ -1,0 +1,71 @@
+@require '../x-variables/x-variables';
+@require "../x-button/x-button";
+
+.maps-button {
+    x-button();
+
+    $transition = $TRANSITION;
+    $icon-size = 26px;
+    $icon-padding = 5px;
+
+    position: relative;
+    white-space: nowrap;
+    font-size: 15px;
+
+    &__text,
+    &__icon {
+        display: inline-block;
+        vertical-align: top;
+    }
+    
+    &__text {
+        position: relative;
+        display: block;
+        overflow: hidden;
+        margin: 0;
+        padding: 0 20px 0 44px;
+        border: none;
+        background: none;
+        color: #333;
+        text-decoration: none;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        transition: color $transition;
+    }
+
+    &._text_only &__text {
+        padding-left: 20px;
+    }
+
+    &__icon {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-left: 6px;
+        padding: $icon-padding;
+        width: $icon-size;
+        height: $icon-size;
+        transition: opacity $transition;
+    }
+
+    &._icon_only &__icon {
+        margin-left: 0;
+    }
+
+    &._checked {
+        background-color: #FFEBA0;
+    }
+
+    &._checked &__text {
+        color: #746233;
+
+    }
+
+    &._disabled &__icon {
+        opacity: 0.75;
+    }
+
+    &._checked._disabled {
+        background: #FFF8DB;
+    }
+}

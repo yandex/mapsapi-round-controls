@@ -1,0 +1,129 @@
+/* Стили применятся на ДОЧЕРНИЕ элементы, поэтому миксин следует назначать родителю */
+custom-scroll() {
+    if (ie != 8) {
+        ::-webkit-scrollbar {
+            width: 13px;
+            height: 13px;
+        }
+        ::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        ::-webkit-scrollbar-thumb {
+            min-height: 30px;
+            box-shadow: inset 0 0 0 4px rgba(0, 0, 0, .2);
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            box-shadow: inset 0 0 0 4px rgba(0, 0, 0, .3);
+        }
+        ::-webkit-scrollbar-thumb:horizontal {
+            border-top: 3px solid transparent;
+            border-bottom: 3px solid transparent;
+        }
+        ::-webkit-scrollbar-thumb:vertical {
+            border-right: 3px solid transparent;
+            border-left: 3px solid transparent;
+        }
+    }
+}
+
+.maps-listbox {
+    display: block;
+    position: relative;
+
+    // В кнопке только иконки, без текста, правим стиль без "модификатора"
+    .maps-button__icon {
+        margin-left: 0;
+    }
+
+    &__list {
+        display: block;
+        position: relative;
+        padding: 5px 0;
+        background-color: #fff;
+        font-family: Arial, Helvetica, sans-serif;
+
+        &._scrollable {
+            overflow-y: scroll;
+            -webkit-overflow-scrolling: touch;
+        }
+    }
+
+    &__list-item {
+        display: block;
+        font: 13px Arial, sans-serif;
+        padding: 5px 20px 5px 10px;
+        cursor: pointer;
+        white-space: nowrap;
+
+        &:hover {
+            background-color: #fbe6a8;
+        }
+            
+        &._selected {
+            background-color: rgba(251, 230, 168, .6);
+            cursor: default;
+        }    
+
+        &-title,
+        &-image {
+            display: inline-block;
+        }
+
+        &-image {
+            border-radius: 50%;
+            border: 1px solid rgba(0,0,0,.2);
+            width: 58px;
+            height: 58px;
+            margin-right: 10px;
+            background-size: cover;
+            background-clip: content-box;
+            background-repeat: no-repeat;
+            vertical-align: middle;
+            background-image: url('images.jpg');
+        }
+
+        &[data-type="yandex#satellite"] &-image {
+            background-position: 0 -58px;
+        }
+
+        &[data-type="yandex#hybrid"] &-image {
+            background-position: 0 -116px;
+        }
+
+        &[data-type="yandex#publicMap"] &-image {
+            background-position: 0 100%;
+        }
+    }
+}
+
+.maps-listbox {
+    $__a = '.maps-popup__arrow';
+
+    .maps-popup {
+        bottom: 0;
+        custom-scroll()
+
+        {$__a} {
+            bottom: 11px;
+        }
+
+        &._position_left {
+            right: 47px;
+
+            {$__a} {
+                right: -6.5px;
+            }
+        }
+        &._position_right {
+            left: 47px;
+
+            {$__a} {
+                left: -6.5px;
+            }
+        }
+
+        &__content {
+            padding: 0;
+        }
+    }
+}

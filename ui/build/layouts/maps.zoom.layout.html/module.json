@@ -1,0 +1,10 @@
+{
+    "name": "maps.zoom.layout.html",
+    "depends": [
+        "maps-zoom",
+        "maps-button-icon"
+    ],
+    "src": [
+        "maps.zoom.layout.html"
+    ]
+}

@@ -1,0 +1,40 @@
+@require '../x-variables/x-variables';
+
+x-button() {
+    $height = $BUTTON_HEIGHT;
+    $transition = $TRANSITION;
+
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    min-width: $height;
+    height: $height;
+    outline: 0;
+    border-width: 0;
+    border-radius: $height;
+    background-color: #FFF;
+    box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.2);
+    color: #333;
+    vertical-align: middle;
+    text-align: left;
+    font-family: $FONT_FAMILY;
+    line-height: $height;
+    cursor: pointer;
+    transition: box-shadow $transition, background-color $transition, opacity $transition;
+    user-select: none;
+
+    &:hover {
+        box-shadow: 0 3px 4px 1px rgba(0, 0, 0, 0.3);
+    }
+
+    &._pressed {
+        box-shadow: 0 2px 3px 1px rgba(0, 0, 0, 0.12);
+        opacity: .95;
+    }
+
+    &._disabled {
+        background-color: #ebebeb;
+        box-shadow: none;
+        cursor: default;
+    }
+}

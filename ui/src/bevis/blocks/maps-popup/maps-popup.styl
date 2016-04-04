@@ -1,0 +1,177 @@
+@keyframes y-popup-fade-out-down {
+    0% {
+        visibility: visible;
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    100% {
+        visibility: hidden;
+        transform: translateY(10px);
+        opacity: 0;
+    }
+}
+
+@keyframes y-popup-fade-in-up {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes y-popup-fade-out-up {
+    0% {
+        visibility: visible;
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    100% {
+        visibility: hidden;
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+}
+
+@keyframes y-popup-fade-in-down {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes y-popup-fade-out-left {
+    0% {
+        visibility: visible;
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    100% {
+        visibility: hidden;
+        transform: translateX(10px);
+        opacity: 0;
+    }
+}
+
+@keyframes y-popup-fade-in-right {
+    0% {
+        opacity: 0;
+        transform: translateX(10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes y-popup-fade-out-right {
+    0% {
+        visibility: visible;
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    100% {
+        visibility: hidden;
+        transform: translateX(-10px);
+        opacity: 0;
+    }
+}
+
+@keyframes y-popup-fade-in-left {
+    0% {
+        opacity: 0;
+        transform: translateX(-10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+y-popup_skin_common($arrow-size) {
+    position: absolute;
+    z-index: 1000;
+
+    // Если задать display: none, то размеры содержимого будут равны 0.
+    visibility: hidden;
+
+    &__content {
+        position: relative;
+        padding: 10px;
+        background-color: inherit;
+    }
+
+    &__arrow {
+        position: absolute;
+        width: $arrow-size;
+        height: $arrow-size;
+        transform: rotate(45deg);
+        background-color: inherit;
+        background-clip: padding-box;
+    }
+
+    &._shown {
+        visibility: visible;
+    }
+
+    &._animate {
+        animation-duration: 100ms;
+        animation-timing-function: ease-out;
+        animation-fill-mode: forwards;
+
+        &._position_top {
+            animation-name: y-popup-fade-out-up;
+        }
+        &._position_top._shown {
+            animation-name: y-popup-fade-in-down;
+        }
+
+        &._position_bottom {
+            animation-name: y-popup-fade-out-down;
+        }
+        &._position_bottom._shown {
+            animation-name: y-popup-fade-in-up;
+        }
+
+        &._position_left {
+            animation-name: y-popup-fade-out-right;
+        }
+        &._position_left._shown {
+            animation-name: y-popup-fade-in-left;
+        }
+
+        &._position_right {
+            animation-name: y-popup-fade-out-left;
+        }
+        &._position_right._shown {
+            animation-name: y-popup-fade-in-right;
+        }
+    }
+}
+
+.maps-popup {
+    y-popup_skin_common(11px);
+
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    background-color: #fff;
+    background-clip: padding-box;
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.2);
+
+    &__arrow {
+        border: 1px solid rgba(0, 0, 0, 0.08);
+    }
+}

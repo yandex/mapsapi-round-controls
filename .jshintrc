@@ -1,0 +1,53 @@
+{
+    "bitwise": false,
+    "boss": true,
+    "browser": true,
+    "curly": false,
+    "devel": false,
+    "eqeqeq": false,
+    "eqnull": true,
+    "es3": true,
+    "evil": true,
+    "expr": true,
+    "forin": false,
+    "iterator": true,
+    "latedef": "nofunc",
+    "loopfunc": true,
+    "multistr": true,
+    "noarg": true,
+    "noempty": false,
+    "onecase": true,
+    "proto": true,
+    "shadow": true,
+    "smarttabs": true,
+    "strict": false,
+    "sub": true,
+    "supernew": true,
+    "undef": true,
+    "unused": false,
+    "-W099": true,
+    "-W014": true,
+    "-W041": true,
+    "-W047": true,
+    "-W008": true,
+    "-W017": true,
+    "-W018": true,
+    "-W065": true,
+    "-W024": true,
+    "globals": {
+        "provide": true,
+        "modules": true,
+        "project": true,
+        "defineClass": true,
+        "imports": true,
+        "module": true,
+        "ym": true,
+        "JSON": true
+    },
+
+    "overrides": {
+        "!src/**/**.js": {
+            "node": true
+        }
+    }
+}

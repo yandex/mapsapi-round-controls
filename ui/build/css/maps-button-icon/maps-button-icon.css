@@ -1,0 +1,119 @@
+.ymaps_maps-button-icon {
+  display: block;
+  height: 100%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  transition: opacity 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+.ymaps_maps-button-icon_collapse {
+  display: block;
+  height: 100%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  transition: opacity 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  background-image: url("ee1fe2e811d247c1f8cc55772909d92e.svg");
+}
+.ymaps_maps-button-icon_cross {
+  display: block;
+  height: 100%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  transition: opacity 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  background-image: url("a461646892fbbb874e5948b24aca0a78.svg");
+}
+.ymaps_maps-button-icon_expand {
+  display: block;
+  height: 100%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  transition: opacity 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  background-image: url("81de10e069a79157ce9656a7a7ea4b44.svg");
+}
+.ymaps_maps-button-icon_geolocation {
+  display: block;
+  height: 100%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  transition: opacity 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  background-image: url("772ca48fc800fe30916e8ede02694586.svg");
+}
+.ymaps_maps-button-icon_h-collapse {
+  display: block;
+  height: 100%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  transition: opacity 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  background-image: url("36a8b646292617a0950c451a1dde0684.svg");
+}
+.ymaps_maps-button-icon_h-expand {
+  display: block;
+  height: 100%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  transition: opacity 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  background-image: url("96af1f9df9b29c2092ee464736b2a070.svg");
+}
+.ymaps_maps-button-icon_layers {
+  display: block;
+  height: 100%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  transition: opacity 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  background-image: url("9daecb3c9362cb8c987028971d9857a5.svg");
+}
+.ymaps_maps-button-icon_loupe {
+  display: block;
+  height: 100%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  transition: opacity 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  background-image: url("f6745dfd61fd0cd8512d60d4ab5cb3c1.svg");
+}
+.ymaps_maps-button-icon_minus {
+  display: block;
+  height: 100%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  transition: opacity 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  background-image: url("72a5b596b1ef5da75d408fb6203fea79.svg");
+}
+.ymaps_maps-button-icon_pano {
+  display: block;
+  height: 100%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  transition: opacity 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  background-image: url("60398ca40abf8fb542dc405ccaece64d.svg");
+}
+.ymaps_maps-button-icon_plus {
+  display: block;
+  height: 100%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  transition: opacity 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  background-image: url("30f0cf500cf7d5455a8f9eb6ac42c24f.svg");
+}
+.ymaps_maps-button-icon_ruler {
+  display: block;
+  height: 100%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  transition: opacity 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  background-image: url("57c38c6a54e7b5cf02a3c53596c08c16.svg");
+}
+.ymaps_maps-button-icon_routes {
+  display: block;
+  height: 100%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  transition: opacity 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  background-image: url("733f8c03d37dfbccbccecd0dcc1577c8.svg");
+}
+.ymaps_maps-button-icon_traffic {
+  display: block;
+  height: 100%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  transition: opacity 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  background-image: url("7e124202af7510c53851d21888632893.svg");
+}

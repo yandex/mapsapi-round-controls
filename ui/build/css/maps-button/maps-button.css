@@ -1,0 +1,85 @@
+.ymaps_maps-button {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  min-width: 36px;
+  height: 36px;
+  outline: 0;
+  border-width: 0;
+  border-radius: 36px;
+  background-color: #fff;
+  box-shadow: 0 2px 3px 1px rgba(0,0,0,0.2);
+  color: #333;
+  vertical-align: middle;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 36px;
+  cursor: pointer;
+  transition: box-shadow 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955), background-color 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955), opacity 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  position: relative;
+  white-space: nowrap;
+  font-size: 15px;
+}
+.ymaps_maps-button:hover {
+  box-shadow: 0 3px 4px 1px rgba(0,0,0,0.3);
+}
+.ymaps_maps-button.ymaps__pressed {
+  box-shadow: 0 2px 3px 1px rgba(0,0,0,0.12);
+  opacity: 0.95;
+}
+.ymaps_maps-button.ymaps__disabled {
+  background-color: #ebebeb;
+  box-shadow: none;
+  cursor: default;
+}
+.ymaps_maps-button__text,
+.ymaps_maps-button__icon {
+  display: inline-block;
+  vertical-align: top;
+}
+.ymaps_maps-button__text {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0 20px 0 44px;
+  border: none;
+  background: none;
+  color: #333;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  transition: color 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+.ymaps_maps-button.ymaps__text_only .ymaps_maps-button__text {
+  padding-left: 20px;
+}
+.ymaps_maps-button__icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 6px;
+  padding: 5px;
+  width: 26px;
+  height: 26px;
+  transition: opacity 0.2s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+.ymaps_maps-button.ymaps__icon_only .ymaps_maps-button__icon {
+  margin-left: 0;
+}
+.ymaps_maps-button.ymaps__checked {
+  background-color: #ffeba0;
+}
+.ymaps_maps-button.ymaps__checked .ymaps_maps-button__text {
+  color: #746233;
+}
+.ymaps_maps-button.ymaps__disabled .ymaps_maps-button__icon {
+  opacity: 0.75;
+}
+.ymaps_maps-button.ymaps__checked.ymaps__disabled {
+  background: #fff8db;
+}

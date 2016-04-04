@@ -1,0 +1,17 @@
+.DS_Store
+.idea
+npm-debug.log
+/.enb/tmp
+/node_modules
+/static/*/*
+!/static/*/*.btjson.js
+/layouts/*/*
+!/layouts/*/*.btjson.js
+
+/build/api/common/*
+/build/api/fragments/*
+/build/api/layouts/*
+
+!/build/api/common/.gitkeep
+!/build/api/fragments/.gitkeep
+!/build/api/layouts/.gitkeep

@@ -1,0 +1,36 @@
+{
+    "name": "baby-loris",
+    "description": "Project stub based on Yandex Maps project",
+    "version": "1.0.0",
+    "author": "Yandex Maps <mapsui-dev@yandex-team.ru>",
+    "contributors": [
+        "Petr Dodev <dodev@yandex-team.ru>"
+    ],
+    "private": true,
+    "dependencies": {
+	    "enb": "0.16.0",
+        "enb-bt": "3.0.0",
+        "express": "4.5.1",
+        "express-ping-middleware": "1.0.0",
+        "inherit": "2.2.2",
+        "node.extend": "1.0.10",
+        "vow-fs": "0.3.2",
+        "vow": "0.4.4",
+        "winston": "0.7.3",
+        "js-yaml": "3.1.0"
+    },
+    "devDependencies": {
+        "analyze": "0.0.14",
+        "enb-bevis-helper": "git://github.com/enb-make/enb-bevis-helper.git#v3.2.0",
+        "jscs": "1.5.8",
+        "jshint": "2.5.2",
+        "jshint-groups": "0.6.2",
+        "stylus": "0.47.1",
+        "supervisor": "0.6.0"
+    },
+    "enb": {
+        "sources": [
+            "blocks"
+        ]
+    }
+}

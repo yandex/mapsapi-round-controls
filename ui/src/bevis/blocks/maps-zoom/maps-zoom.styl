@@ -1,0 +1,48 @@
+@require "../x-button/x-button";
+@require '../x-variables/x-variables';
+
+.maps-zoom {
+    $button_size = $BUTTON_HEIGHT;
+    $plus_icon = 'images/plus.svg';
+    $minus_icon = 'images/minus.svg';
+
+    position: relative;
+    display: block;
+    padding: $button_size 0;
+    width: $button_size;
+    height: 8px;
+    line-height: 0;
+
+    &__plus,
+    &__minus {
+        x-button();
+
+        position: absolute;
+        width: $button_size;
+        height: $button_size;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        z-index: 1;
+
+        .maps-button-icon_plus,
+        .maps-button-icon_minus {
+            transition: opacity $TRANSITION;
+        }
+    }
+
+    &__plus {
+        top: 0;
+
+        &._disabled .maps-button-icon_plus {
+            opacity: .75;
+        }
+    }
+
+    &__minus {
+        bottom: 0;
+
+        &._disabled .maps-button-icon_minus {
+            opacity: .75;
+        }
+    }
+}

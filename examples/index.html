@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Mapsapi Round Controls Demo</title>
+    <style type="text/css">
+        html, body, #map {
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+
+    <script src="//api-maps.yandex.ru/2.1/?lang=en_US" type="text/javascript"></script>
+
+    <script src="../build/release/all.js"></script>
+
+    <script>
+        ymaps.ready(function () {
+            var myMap = new ymaps.Map('map', {
+                center: [59.93772, 30.313622],
+                zoom: 10,
+                controls: []
+            });
+
+            // Button with preset icon image
+            var button = new ymaps.control.Button({
+                data: {
+                    iconType: 'loupe',
+                    title: 'Button with preset icon image'
+                },
+                options: {
+                    layout: 'round#buttonLayout'
+                }
+            });
+            myMap.controls.add(button);
+
+            // Button with custom icon image
+            var button2 = new ymaps.control.Button({
+                data: {
+                    image: 'https://cdnjs.cloudflare.com/ajax/libs/emojione/2.1.2/assets/svg/1f333.svg',
+                    content: 'Another Button',
+                    title: 'Button with custom icon image'
+                },
+                options: {
+                    layout: 'round#buttonLayout',
+                    maxWidth: 200
+                }
+            });
+            myMap.controls.add(button2);
+
+            // Button without icon
+            var button3 = new ymaps.control.Button({
+                data: {
+                    content: 'Button'
+                },
+                options: {
+                    layout: 'round#buttonLayout'
+                }
+            });
+            myMap.controls.add(button3);
+
+            var geolocationControl = new ymaps.control.GeolocationControl({
+                options: {
+                    layout: 'round#buttonLayout'
+                }
+            });
+            myMap.controls.add(geolocationControl);
+
+            var rulerControl = new ymaps.control.RulerControl({
+                options: {
+                    layout: 'round#rulerLayout'
+                }
+            });
+            myMap.controls.add(rulerControl);
+
+            var zoomControl = new ymaps.control.ZoomControl({
+                options: {
+                    layout: 'round#zoomLayout'
+                }
+            });
+            myMap.controls.add(zoomControl);
+
+            var typeSelector = new ymaps.control.TypeSelector({
+                options: {
+                    layout: 'round#listBoxLayout',
+                    itemLayout: 'round#listBoxItemLayout',
+                    itemSelectableLayout: 'round#listBoxItemSelectableLayout',
+                    float: 'none',
+                    position: {
+                        bottom: '40px',
+                        left: '10px'
+                    }
+                }
+            });
+            myMap.controls.add(typeSelector);
+        });
+    </script>
+</head>
+<body>
+<div id="map"></div>
+</body>
+</html>

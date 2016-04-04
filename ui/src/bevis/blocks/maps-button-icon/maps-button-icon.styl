@@ -1,0 +1,30 @@
+@require '../x-variables/x-variables';
+
+.maps-button-icon {
+    maps-button-icon() {
+        display: block;
+        height: 100%;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        transition: opacity $TRANSITION;
+    }
+
+    & {
+        maps-button-icon();
+    }
+
+    &_collapse         { maps-button-icon(); background-image: url('images/collapse.svg'); }
+    &_cross            { maps-button-icon(); background-image: url('images/cross.svg'); }
+    &_expand           { maps-button-icon(); background-image: url('images/expand.svg'); }
+    &_geolocation      { maps-button-icon(); background-image: url('images/geolocation.svg'); }
+    &_h-collapse       { maps-button-icon(); background-image: url('images/h-collapse.svg'); }
+    &_h-expand         { maps-button-icon(); background-image: url('images/h-expand.svg'); }
+    &_layers           { maps-button-icon(); background-image: url('images/layers.svg'); }
+    &_loupe            { maps-button-icon(); background-image: url('images/loupe.svg'); }
+    &_minus            { maps-button-icon(); background-image: url('images/minus.svg'); }
+    &_pano             { maps-button-icon(); background-image: url('images/pano.svg'); }
+    &_plus             { maps-button-icon(); background-image: url('images/plus.svg'); }
+    &_ruler            { maps-button-icon(); background-image: url('images/ruler.svg'); }
+    &_routes           { maps-button-icon(); background-image: url('images/routes.svg'); }
+    &_traffic          { maps-button-icon(); background-image: url('images/traffic_gray.svg'); }
+}
