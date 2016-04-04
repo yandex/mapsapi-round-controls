@@ -11,17 +11,20 @@ http://yandex.github.io/mapsapi-round-controls/
 1. Download the source code: [`build/release/all.js`](build/release/all.js).
 2. Add it to your page below Yandex.Maps JS API `<script>` tag.
 3. Create controls with `round#`... layout keys.
+
+## Available layouts:
  
 ### Button
 
 | Param                        | Value
 | ---------------------------- | ----------------------------------
-| `parameters.data.iconType`   | [List of available icons](docs/icons.md)  
 | `parameters.options.layout`  | `round#buttonLayout`
+| `parameters.data.iconType`   | [List of available icons](docs/icons.md)  
+| `parameters.data.image`      | Icon URL
 
 
 ```js
-// Example with preset icon image
+// Preset icon image.
 var button = new ymaps.control.Button({
     data: {
         iconType: 'loupe',
@@ -36,7 +39,7 @@ myMap.controls.add(button);
 ```
 
 ```js
-// Example with custom icon image
+// Custom icon image.
 var button = new ymaps.control.Button({
     data: {
         image: 'path_to/image.svg',
@@ -53,14 +56,13 @@ myMap.controls.add(button);
 For more info visit https://tech.yandex.ru/maps/doc/jsapi/2.1/ref/reference/control.Button-docpage/
 
 
-### Geolocation
+### GeolocationControl
 
 | Param                        | Value
 | ---------------------------- | --------------------
 | `parameters.options.layout`  | `round#buttonLayout`
 
 ```js
-// Example
 var geolocationControl = new ymaps.control.GeolocationControl({
     options: {
         layout: 'round#buttonLayout'
@@ -71,14 +73,13 @@ myMap.controls.add(geolocationControl);
 
 For more info visit https://tech.yandex.ru/maps/doc/jsapi/2.1/ref/reference/control.GeolocationControl-docpage/
 
-### Ruler
+### RulerControl
 
 | Param                        | Value
 | ---------------------------- | --------------------
 | `parameters.options.layout`  | `round#rulerLayout`
 
 ```js
-// Example
 var rulerControl = new ymaps.control.RulerControl({
     options: {
         layout: 'round#rulerLayout'
@@ -99,7 +100,7 @@ For more info visit  https://tech.yandex.ru/maps/doc/jsapi/2.1/ref/reference/con
 
 
 ```js
-// Example: TypeSelector on the left side
+// TypeSelector on the left side.
 var typeSelector = new ymaps.control.TypeSelector({
     options: {
         layout: 'round#listBoxLayout',
@@ -116,7 +117,7 @@ myMap.controls.add(typeSelector);
 ```
 
 ```js
-// Example: TypeSelector on the right side
+// TypeSelector on the right side.
 var typeSelector = new ymaps.control.TypeSelector({
     options: {
         layout: 'round#listBoxLayout',
@@ -141,7 +142,6 @@ For more info visit https://tech.yandex.ru/maps/doc/jsapi/2.1/ref/reference/cont
 | `parameters.options.layout`  | `round#buttonLayout`
 
 ```js
-// Example 
 var zoomControl = new ymaps.control.ZoomControl({
     options: {
         layout: 'round#zoomLayout'
