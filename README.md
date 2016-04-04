@@ -135,7 +135,7 @@ myMap.controls.add(typeSelector);
 
 For more info visit https://tech.yandex.ru/maps/doc/jsapi/2.1/ref/reference/control.TypeSelector-docpage/
 
-### Zoom
+### ZoomControl
 
 | Param                        | Value
 | ---------------------------- | --------------------
