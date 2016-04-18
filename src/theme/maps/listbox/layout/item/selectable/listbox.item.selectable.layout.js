@@ -4,7 +4,7 @@
 
 
 ym.modules.define({
-    name: "theme.maps.control.layout.ListBoxSelectableItem",
+    name: "theme.round.control.layout.ListBoxSelectableItem",
     key: 'round#listBoxItemSelectableLayout',
     storage: 'layout',
     depends: [

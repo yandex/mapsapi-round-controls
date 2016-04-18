@@ -3,7 +3,7 @@
  */
 
 ym.modules.define({
-name: "theme.maps.control.layout.Button",
+name: "theme.round.control.layout.Button",
 key: 'round#buttonLayout',
 storage: 'layout',
 depends: [

@@ -3,7 +3,7 @@
  */
 
 ym.modules.define({
-    name: "theme.maps.control.layout.Zoom",
+    name: "theme.round.control.layout.Zoom",
     key: 'round#zoomLayout',
     storage: 'layout',
     depends: [

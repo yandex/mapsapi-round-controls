@@ -3,7 +3,7 @@
  */
 
 ym.modules.define({
-    name: "theme.maps.control.layout.ListBoxItem",
+    name: "theme.round.control.layout.ListBoxItem",
     key: 'round#listBoxItemLayout',
     storage: 'layout',
     depends: [

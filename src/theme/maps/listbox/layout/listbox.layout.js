@@ -7,7 +7,7 @@
 var PANEL_PADDING = 40;
 
 ym.modules.define({
-    name: "theme.maps.control.layout.ListBox",
+    name: "theme.round.control.layout.ListBox",
     key: 'round#listBoxLayout',
     storage: 'layout',
     depends: [

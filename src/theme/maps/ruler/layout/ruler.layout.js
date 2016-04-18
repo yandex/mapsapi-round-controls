@@ -3,7 +3,7 @@
  */
 
 ym.modules.define({
-    name: "theme.maps.control.layout.Ruler",
+    name: "theme.round.control.layout.Ruler",
     key: 'maps#rulerLayout',
     storage: 'layout',
     depends: [
