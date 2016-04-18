@@ -7,7 +7,7 @@ name: "theme.round.control.layout.Button",
 key: 'round#buttonLayout',
 storage: 'layout',
 depends: [
-    "maps.button.layout.html",
+    "round.button.layout.html",
     "Monitor",
     "templateLayoutFactory",
 

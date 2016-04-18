@@ -7,7 +7,7 @@ ym.modules.define({
     key: 'round#zoomLayout',
     storage: 'layout',
     depends: [
-        "maps.zoom.layout.html",
+        "round.zoom.layout.html",
         "templateLayoutFactory",
         "Monitor",
         "domEvent.manager",

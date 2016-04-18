@@ -8,7 +8,7 @@ ym.modules.define({
     storage: 'layout',
     depends: [
         "templateLayoutFactory",
-        "theme.maps.control.layout.ListBoxSelectableItem"
+        "theme.round.control.layout.ListBoxSelectableItem"
     ],
     dynamicDepends: {
         contentLayout: function (data) {

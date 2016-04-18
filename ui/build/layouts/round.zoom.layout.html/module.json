@@ -1,10 +1,10 @@
 {
-    "name": "maps.zoom.layout.html",
+    "name": "round.zoom.layout.html",
     "depends": [
         "maps-zoom",
         "maps-button-icon"
     ],
     "src": [
-        "maps.zoom.layout.html"
+        "round.zoom.layout.html"
     ]
 }

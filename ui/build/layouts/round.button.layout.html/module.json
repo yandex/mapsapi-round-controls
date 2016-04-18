@@ -1,10 +1,10 @@
 {
-    "name": "maps.button.layout.html",
+    "name": "round.button.layout.html",
     "depends": [
         "maps-button",
         "maps-button-icon"
     ],
     "src": [
-        "maps.button.layout.html"
+        "round.button.layout.html"
     ]
 }

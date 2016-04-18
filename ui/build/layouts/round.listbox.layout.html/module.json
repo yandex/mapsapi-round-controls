@@ -1,5 +1,5 @@
 {
-    "name": "maps.listbox.layout.html",
+    "name": "round.listbox.layout.html",
     "depends": [
         "maps-popup",
         "maps-button",
@@ -7,6 +7,6 @@
         "maps-listbox"
     ],
     "src": [
-        "maps.listbox.layout.html"
+        "round.listbox.layout.html"
     ]
 }

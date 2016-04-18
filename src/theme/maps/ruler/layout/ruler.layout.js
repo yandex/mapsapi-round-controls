@@ -4,12 +4,12 @@
 
 ym.modules.define({
     name: "theme.round.control.layout.Ruler",
-    key: 'maps#rulerLayout',
+    key: 'round#rulerLayout',
     storage: 'layout',
     depends: [
         "templateLayoutFactory",
         "layout.component.clientBounds",
-        "theme.maps.control.layout.Button",
+        "theme.round.control.layout.Button",
         "shape.Rectangle",
         "geometry.pixel.Rectangle",
         "domEvent.manager",
@@ -30,7 +30,7 @@ ym.modules.define({
     declaration: function (provide, templateLayoutFactory, clientBounds, ButtonLayout, RectangleShape,
         RectanglePixelGeometry, domEventManager, setupMarginManager, utilDomStyle, utilDomElement, browser) {
         var RulerLayout = templateLayoutFactory.createClass(
-            '<ymaps style="display: block;">{% include maps#buttonLayout %}</ymaps>', {
+            '<ymaps style="display: block;">{% include round#buttonLayout %}</ymaps>', {
                 _cssClassPrefix: 'ymaps_',
 
                 build: function () {

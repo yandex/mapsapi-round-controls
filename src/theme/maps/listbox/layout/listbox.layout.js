@@ -12,7 +12,7 @@ ym.modules.define({
     storage: 'layout',
     depends: [
         "templateLayoutFactory",
-        "maps.listbox.layout.html",
+        "round.listbox.layout.html",
         "util.dom.element",
         "util.dom.reaction.hover",
         "util.dom.reaction.hold",
