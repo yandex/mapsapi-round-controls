@@ -49,7 +49,7 @@ provide([0,"<ymaps class=\"ymaps_maps-zoom\"><ymaps class=\"ymaps_maps-zoom__plu
  */
 
 ym.modules.define({
-name: "theme.maps.control.layout.Button",
+name: "theme.round.control.layout.Button",
 key: 'round#buttonLayout',
 storage: 'layout',
 depends: [
@@ -321,7 +321,7 @@ depends: [
  */
 
 ym.modules.define({
-    name: "theme.maps.control.layout.ListBoxItem",
+    name: "theme.round.control.layout.ListBoxItem",
     key: 'round#listBoxItemLayout',
     storage: 'layout',
     depends: [
@@ -351,7 +351,7 @@ ym.modules.define({
 
 
 ym.modules.define({
-    name: "theme.maps.control.layout.ListBoxSelectableItem",
+    name: "theme.round.control.layout.ListBoxSelectableItem",
     key: 'round#listBoxItemSelectableLayout',
     storage: 'layout',
     depends: [
@@ -422,7 +422,7 @@ ym.modules.define({
 var PANEL_PADDING = 40;
 
 ym.modules.define({
-    name: "theme.maps.control.layout.ListBox",
+    name: "theme.round.control.layout.ListBox",
     key: 'round#listBoxLayout',
     storage: 'layout',
     depends: [
@@ -890,7 +890,7 @@ ym.modules.define({
  */
 
 ym.modules.define({
-    name: "theme.maps.control.layout.Ruler",
+    name: "theme.round.control.layout.Ruler",
     key: 'maps#rulerLayout',
     storage: 'layout',
     depends: [
@@ -969,7 +969,7 @@ ym.modules.define({
  */
 
 ym.modules.define({
-    name: "theme.maps.control.layout.Zoom",
+    name: "theme.round.control.layout.Zoom",
     key: 'round#zoomLayout',
     storage: 'layout',
     depends: [
