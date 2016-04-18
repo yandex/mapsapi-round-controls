@@ -32,16 +32,16 @@ provideCss(".ymaps_maps-popup{position:absolute;z-index:1000;visibility:hidden;b
 ym.modules.define('maps-zoom', ['system.provideCss'], function (provide, provideCss) {
 provideCss(".ymaps_maps-zoom{position:relative;display:block;padding:36px 0;width:36px;height:8px;line-height:0}.ymaps_maps-zoom__plus,.ymaps_maps-zoom__minus{display:inline-block;margin:0;padding:0;min-width:36px;height:36px;outline:0;border-width:0;border-radius:36px;background-color:#fff;box-shadow:0 2px 3px 1px rgba(0,0,0,.2);color:#333;vertical-align:middle;text-align:left;font-family:Arial,Helvetica,sans-serif;line-height:36px;cursor:pointer;transition:box-shadow .2s cubic-bezier(.455,.03,.515,.955),background-color .2s cubic-bezier(.455,.03,.515,.955),opacity .2s cubic-bezier(.455,.03,.515,.955);-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;position:absolute;width:36px;height:36px;background-repeat:no-repeat;background-position:50% 50%;z-index:1}.ymaps_maps-zoom__plus:hover,.ymaps_maps-zoom__minus:hover{box-shadow:0 3px 4px 1px rgba(0,0,0,.3)}.ymaps_maps-zoom__plus.ymaps__pressed,.ymaps_maps-zoom__minus.ymaps__pressed{box-shadow:0 2px 3px 1px rgba(0,0,0,.12);opacity:.95}.ymaps_maps-zoom__plus.ymaps__disabled,.ymaps_maps-zoom__minus.ymaps__disabled{background-color:#ebebeb;box-shadow:none;cursor:default}.ymaps_maps-zoom__plus .ymaps_maps-button-icon_plus,.ymaps_maps-zoom__minus .ymaps_maps-button-icon_plus,.ymaps_maps-zoom__plus .ymaps_maps-button-icon_minus,.ymaps_maps-zoom__minus .ymaps_maps-button-icon_minus{transition:opacity .2s cubic-bezier(.455,.03,.515,.955)}.ymaps_maps-zoom__plus{top:0}.ymaps_maps-zoom__plus.ymaps__disabled .ymaps_maps-button-icon_plus{opacity:.75}.ymaps_maps-zoom__minus{bottom:0}.ymaps_maps-zoom__minus.ymaps__disabled .ymaps_maps-button-icon_minus{opacity:.75}", provide);
 });
-ym.modules.define('maps.button.layout.html', ["maps-button","maps-button-icon"], function (provide) {
+ym.modules.define('round.button.layout.html', ["maps-button","maps-button-icon"], function (provide) {
 provide([0,"<ymaps class=\"ymaps_maps-button\" style=\"max-width: ",2001,["state.maxWidth",[["raw",null]]],0,"px\" title=\"",2001,["data.title",[["raw",null]]],0,"\"><ymaps class=\"ymaps_maps-button__icon\"><ymaps class=\"ymaps_maps-button-icon\"></ymaps></ymaps><ymaps class=\"ymaps_maps-button__text\">",2001,["data.content",[["default","\"\""],["raw",null]]],0,"</ymaps></ymaps>"]);
 });
-ym.modules.define('maps.listbox.layout.html', ["maps-popup","maps-button","maps-button-icon","maps-listbox"], function (provide) {
+ym.modules.define('round.listbox.layout.html', ["maps-popup","maps-button","maps-button-icon","maps-listbox"], function (provide) {
 provide([0,"<ymaps class=\"ymaps_maps-listbox\"><ymaps class=\"ymaps_maps-button\"><ymaps class=\"ymaps_maps-button__icon\"><ymaps class=\"ymaps_maps-button-icon_layers\"></ymaps></ymaps></ymaps><ymaps class=\"ymaps_maps-popup\"><ymaps class=\"ymaps_maps-popup__arrow\"></ymaps><ymaps class=\"ymaps_maps-popup__content\"><ymaps class=\"ymaps_maps-listbox__list\"></ymaps></ymaps></ymaps></ymaps>"]);
 });
-ym.modules.define('maps.listbox.layout.item.html', ["maps-popup","maps-listbox"], function (provide) {
+ym.modules.define('round.listbox.layout.item.html', ["maps-popup","maps-listbox"], function (provide) {
 provide([0,"<ymaps class=\"ymaps_maps-listbox__list-item\" data-type=\"",2001,["data.mapType",[["raw",null]]],0,"\"><ymaps class=\"ymaps_maps-listbox__list-item-image\"></ymaps>",2001,["data.content",[["raw",null]]],0,"</ymaps>"]);
 });
-ym.modules.define('maps.zoom.layout.html', ["maps-zoom","maps-button-icon"], function (provide) {
+ym.modules.define('round.zoom.layout.html', ["maps-zoom","maps-button-icon"], function (provide) {
 provide([0,"<ymaps class=\"ymaps_maps-zoom\"><ymaps class=\"ymaps_maps-zoom__plus\"><ymaps class=\"ymaps_maps-button-icon_plus\"></ymaps></ymaps><ymaps class=\"ymaps_maps-zoom__minus\"><ymaps class=\"ymaps_maps-button-icon_minus\"></ymaps></ymaps></ymaps>"]);
 });
 /**
@@ -53,7 +53,7 @@ name: "theme.round.control.layout.Button",
 key: 'round#buttonLayout',
 storage: 'layout',
 depends: [
-    "maps.button.layout.html",
+    "round.button.layout.html",
     "Monitor",
     "templateLayoutFactory",
 
@@ -326,7 +326,7 @@ ym.modules.define({
     storage: 'layout',
     depends: [
         "templateLayoutFactory",
-        "theme.maps.control.layout.ListBoxSelectableItem"
+        "theme.round.control.layout.ListBoxSelectableItem"
     ],
     dynamicDepends: {
         contentLayout: function (data) {
@@ -356,7 +356,7 @@ ym.modules.define({
     storage: 'layout',
     depends: [
         "templateLayoutFactory",
-        "maps.listbox.layout.item.html",
+        "round.listbox.layout.item.html",
         "util.dom.element",
         "util.dom.className",
         "util.dom.style",
@@ -427,7 +427,7 @@ ym.modules.define({
     storage: 'layout',
     depends: [
         "templateLayoutFactory",
-        "maps.listbox.layout.html",
+        "round.listbox.layout.html",
         "util.dom.element",
         "util.dom.reaction.hover",
         "util.dom.reaction.hold",
@@ -891,12 +891,12 @@ ym.modules.define({
 
 ym.modules.define({
     name: "theme.round.control.layout.Ruler",
-    key: 'maps#rulerLayout',
+    key: 'round#rulerLayout',
     storage: 'layout',
     depends: [
         "templateLayoutFactory",
         "layout.component.clientBounds",
-        "theme.maps.control.layout.Button",
+        "theme.round.control.layout.Button",
         "shape.Rectangle",
         "geometry.pixel.Rectangle",
         "domEvent.manager",
@@ -917,7 +917,7 @@ ym.modules.define({
     declaration: function (provide, templateLayoutFactory, clientBounds, ButtonLayout, RectangleShape,
         RectanglePixelGeometry, domEventManager, setupMarginManager, utilDomStyle, utilDomElement, browser) {
         var RulerLayout = templateLayoutFactory.createClass(
-            '<ymaps style="display: block;">{% include maps#buttonLayout %}</ymaps>', {
+            '<ymaps style="display: block;">{% include round#buttonLayout %}</ymaps>', {
                 _cssClassPrefix: 'ymaps_',
 
                 build: function () {
@@ -973,7 +973,7 @@ ym.modules.define({
     key: 'round#zoomLayout',
     storage: 'layout',
     depends: [
-        "maps.zoom.layout.html",
+        "round.zoom.layout.html",
         "templateLayoutFactory",
         "Monitor",
         "domEvent.manager",
