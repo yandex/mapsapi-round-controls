@@ -7,7 +7,7 @@ var button = new ymaps.control.Button({
         iconType: 'cross'
     },
     options: {
-        layout: 'maps#buttonLayout'
+        layout: 'round#buttonLayout'
     }
 });
 ```
