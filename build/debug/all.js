@@ -700,9 +700,11 @@ ym.modules.define({
                 switch (appearance) {
                     case 'iconOnly':
                         domClassName.add(this._buttonElement, BUTTON_ICON_ONLY_CLASS);
-                        domStyle.css(this._buttonTitleElement, {
-                            display: 'none'
-                        });
+                        if (this._buttonTitleElement) {
+                            domStyle.css(this._buttonTitleElement, {
+                                display: 'none'
+                            });
+                        }
                         this._applyIcon();
                         break;
                     case 'contentOnly':
@@ -723,9 +725,11 @@ ym.modules.define({
                 switch (appearance) {
                     case 'iconOnly':
                         domClassName.remove(this._buttonElement, BUTTON_ICON_ONLY_CLASS);
-                        domStyle.css(this._buttonTitleElement, {
-                            display: 'inline-block'
-                        });
+                        if (this._buttonTitleElement) {
+                            domStyle.css(this._buttonTitleElement, {
+                                display: 'inline-block'
+                            });
+                        }
                         break;
                     case 'contentOnly':
                         domStyle.css(this._buttonIconElement, {
