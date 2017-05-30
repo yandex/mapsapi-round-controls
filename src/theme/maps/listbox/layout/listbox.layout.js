@@ -142,7 +142,7 @@ ym.modules.define({
                 if (this.getData().state.get('enabled', true)) {
                     this._clearHoldReaction();
                 }
-                this._hoverReaction.disable();
+                this._clearHoverReaction();
                 this._stateMonitor.destroy();
                 this._optionsMonitor.destroy();
 
@@ -263,6 +263,12 @@ ym.modules.define({
             _clearHoldReaction: function () {
                 if (this._holdReaction) {
                     this._holdReaction.disable();
+                }
+            },
+
+            _clearHoverReaction: function () {
+                if (this._hoverReaction) {
+                    this._hoverReaction.disable();
                 }
             },
 
